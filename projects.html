@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Sunesh Sundarasami</title>
+  <meta name="description" content="Projects by Sunesh Sundarasami: video and manual understanding for EV-battery disassembly, knowledge graphs and BPMN, 3D semantic mapping, UAV video segmentation, robot navigation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<div class="wrap">
+
+  <aside class="side">
+    <p class="name"><a href="index.html">Sunesh Sundarasami</a></p>
+    <!-- <img class="photo" src="images/profile.jpg" alt="Sunesh Sundarasami"> -->
+    <p class="tagline">M.Sc. student,<br>Autonomous Systems<br>H-BRS, Bonn</p>
+    <ul class="links">
+      <li><a href="mailto:sunesh@outlook.de"><i class="fa-regular fa-envelope"></i>Email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=G7VlDLkAAAAJ"><i class="fa-brands fa-google-scholar"></i>Google Scholar</a></li>
+      <li><a href="https://github.com/SuneshSundarasami"><i class="fa-brands fa-github"></i>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/SuneshSundarasami/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+      <li><a href="https://www.kaggle.com/suneshsundarasami"><i class="fa-brands fa-kaggle"></i>Kaggle</a></li>
+      <!-- <li><a href="cv.pdf"><i class="fa-regular fa-file-lines"></i>CV</a></li> -->
+    </ul>
+  </aside>
+
+  <main>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Main</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </nav>
+
+    <h1>Projects</h1>
+
+    <p class="intro">Work with a paper, code or report you can open. What I did in my jobs is listed under
+      <a href="index.html#experience">Experience</a>.</p>
+
+    <!-- Card template. One sentence only; details belong in the linked repo or paper.
+    <article class="card">
+      <h3>Title</h3>
+      <p class="meta">Where · when</p>
+      <p>What it does and the main result.</p>
+      <ul class="tags"><li>Tool</li><li>Tool</li></ul>
+      <div class="refs"><a href="...">code</a><a href="...">paper</a></div>
+    </article>
+    -->
+
+    <h2 class="first">3D Perception and Computer Vision</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>VoxelFix</h3>
+        <p class="meta">Fraunhofer IVI · 2025–26 · preprint</p>
+        <p>Graph-based correction of finished 3D semantic maps of aerial scenes: +4.23 to 5.00 points mIoU.</p>
+        <ul class="tags"><li>Graph neural networks</li><li>3D semantic mapping</li><li>SfM / MVS</li><li>UPerNet</li><li>MaskFormer</li><li>Bonxai</li></ul>
+        <div class="refs">
+          <a href="https://gomtae.github.io/publications/voxelfix.html">project page</a>
+          <a href="https://arxiv.org/abs/2609.05114">paper</a>
+        </div>
+      </article>
+
+      <!-- TODO(Sunesh): add dates and say whether it was solo or a team. -->
+      <article class="card">
+        <h3>UAV video segmentation</h3>
+        <p class="meta">DLRV course project, H-BRS</p>
+        <p>Carries labels along optical flow between keyframes: 1.65× faster on UAVid, 96.2% of the mIoU kept.</p>
+        <ul class="tags"><li>PyTorch</li><li>Optical flow (SEA-RAFT)</li><li>ConvNeXt</li><li>UPerNet</li><li>UAVid</li></ul>
+        <div class="refs">
+          <a href="https://github.com/SuneshSundarasami/Flow-Based-Label-Propagation-for-UAV-Video-Segmentation">code</a>
+          <a href="https://youtu.be/JxAIijdjqFs">video</a>
+        </div>
+      </article>
+    </div>
+
+    <h2>Robotics</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Mobile robot navigation</h3>
+        <p class="meta">Mobile Robotics, H-BRS · 2025 · team</p>
+        <p>A* planning, potential-field control, Monte Carlo localization and frontier exploration on ROS 2.</p>
+        <ul class="tags"><li>ROS 2</li><li>A*</li><li>Monte Carlo localization</li><li>Potential fields</li><li>DBSCAN</li></ul>
+        <div class="refs">
+          <a href="https://github.com/SuneshSundarasami/Comprehensive-Navigation-System-for-Autonomous-Mobile-Robots/blob/main/Report.pdf">report</a>
+          <a href="https://github.com/SuneshSundarasami/Comprehensive-Navigation-System-for-Autonomous-Mobile-Robots">code</a>
+        </div>
+      </article>
+
+      <!-- TODO(Sunesh): course or personal project? Add the date. -->
+      <article class="card">
+        <h3>Multi-robot formation simulator</h3>
+        <p class="meta">Robile robots</p>
+        <p>Robile robots driving in leader–follower formations, as a lightweight alternative to Gazebo.</p>
+        <ul class="tags"><li>PyBullet</li><li>ROS 2</li><li>Formation control</li><li>Multi-robot</li></ul>
+        <div class="refs">
+          <a href="https://github.com/SuneshSundarasami/Robile-Multi-Robot-Formation-Simulation-Environment-Using-Pybullet-And-ROS2">code</a>
+        </div>
+      </article>
+    </div>
+
+    <h2>NLP and LLM Agents</h2>
+    <div class="cards">
+      <!-- TODO(Sunesh): add dates and say whether it was solo or a team. -->
+      <article class="card">
+        <h3>Social-event recommender on Pepper</h3>
+        <p class="meta">HCICR course project, H-BRS</p>
+        <p>Pepper talks with a visitor through a LangGraph dialogue and explains its pick with a Bayesian network.</p>
+        <ul class="tags"><li>LangGraph</li><li>LLMs</li><li>pyAgrum</li><li>OpenCV</li><li>Whisper</li><li>qiBullet</li></ul>
+        <div class="refs">
+          <a href="https://github.com/SuneshSundarasami/Social-Event-Recommendation-Agent-on-Pepper-using-LangGraph-and-pyAgrum-BayesNet">code</a>
+        </div>
+      </article>
+
+      <!-- TODO(Sunesh): add the best macro-F1 or ROC-AUC if you have it. -->
+      <article class="card">
+        <h3>Multi-label toxicity detection</h3>
+        <p class="meta">NLP, H-BRS · 2025 · team of two</p>
+        <p>Classical, recurrent and transformer models compared on six toxicity labels, 150K+ comments.</p>
+        <ul class="tags"><li>BERT</li><li>RoBERTa</li><li>GPT-2</li><li>FLAN-T5</li><li>BiLSTM</li><li>TF-IDF</li></ul>
+        <div class="refs">
+          <a href="https://github.com/SuneshSundarasami/Multilabel-Toxicity-Detection-Using-Classical-RNN-and-Transformer-Architectures/blob/main/Poster.pdf">poster</a>
+          <a href="https://github.com/SuneshSundarasami/Multilabel-Toxicity-Detection-Using-Classical-RNN-and-Transformer-Architectures">code</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+</div>
+
+<footer>
+  © 2026 Sunesh Praveen Raja Sundarasami · Last updated October 2026<br>
+  <a href="https://github.com/SuneshSundarasami/SuneshSundarasami.github.io">Source code</a> ·
+  Design based on the <a href="https://github.com/mmistakes/minimal-mistakes">Minimal Mistakes</a> Jekyll theme
+</footer>
+</body>
+</html>

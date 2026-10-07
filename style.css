@@ -1,0 +1,262 @@
+/* Design based on the Minimal Mistakes Jekyll theme (github.com/mmistakes/minimal-mistakes):
+   name and links on the left, a plain uppercase menu, one text column. */
+
+:root {
+  --text: #333;
+  --muted: #767676;
+  --rule: #e4e4e4;
+  --underline: #c4c4c4;
+  --bg: #fff;
+  /* Klee One is the Latin base of the font on the original site.
+     For a more conventional look, swap in e.g. "Source Serif 4". */
+  --font: "Klee One", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--underline);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+a:hover { text-decoration-color: var(--text); }
+
+.wrap {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 660px);
+  gap: 0 72px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px 0;
+}
+
+/* ---------- left column ---------- */
+
+.side .name {
+  margin: 0 0 28px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+.side .name a { text-decoration: none; }
+
+.side .photo {
+  display: block;
+  width: 150px;
+  margin-bottom: 24px;
+}
+
+.side .tagline {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.9;
+}
+.links a { text-decoration: none; }
+.links a:hover { text-decoration: underline; }
+.links i {
+  width: 1.2em;
+  margin-right: 6px;
+  font-style: normal;
+  text-align: center;
+  color: #555;
+}
+
+/* ---------- menu ---------- */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.menu a {
+  display: inline-block;
+  padding-top: 6px;
+  border-top: 2px solid transparent;
+  text-decoration: none;
+}
+.menu a:hover { border-top-color: var(--underline); }
+.menu a[aria-current="page"] { border-top-color: var(--text); }
+
+/* ---------- content ---------- */
+
+h1, h2, h3 { font-weight: 400; line-height: 1.3; }
+
+h1 { margin: 0 0 18px; font-size: 34px; }
+
+h2 {
+  margin: 40px 0 14px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+  font-size: 28px;
+}
+
+/* a section heading directly under the page title needs no rule above it */
+h2.first { margin-top: 8px; padding-top: 0; border-top: 0; }
+
+h3 { margin: 0; font-size: 18px; font-weight: 600; }
+
+p { margin: 0 0 16px; }
+
+ul { margin: 0 0 16px; padding-left: 22px; }
+ul li { margin-bottom: 6px; }
+li::marker { font-size: 0.8em; }
+main ul { list-style: square; }
+
+.when { font-weight: 600; }
+
+.muted { color: var(--muted); }
+
+/* experience / education rows */
+.cv-list { list-style: none; padding: 0; }
+.cv-list li { margin-bottom: 12px; }
+.cv-list .dates { color: var(--muted); }
+.cv-list ul {
+  margin: 4px 0 0;
+  padding-left: 20px;
+  list-style: square;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.cv-list ul li { margin-bottom: 4px; }
+
+.intro { color: var(--muted); font-size: 16px; }
+
+/* project cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 18px 0 8px;
+}
+.cards + h2 { margin-top: 28px; padding-top: 20px; }
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--bg);
+  font-size: 15px;
+  line-height: 1.5;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--underline);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+.card h3 { font-size: 16px; line-height: 1.3; }
+.card .meta {
+  margin: 2px 0 6px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--muted);
+}
+.card p { margin: 0 0 6px; }
+.card .refs {
+  margin-top: auto;
+  padding-top: 2px;
+  font-size: 14px;
+}
+.card .refs a { margin-right: 14px; }
+.card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 2px 0 8px;
+  padding: 0;
+  list-style: none;
+}
+.card .tags li {
+  margin: 0;
+  padding: 0 6px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #555;
+}
+.badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  border: 1px solid var(--underline);
+  border-radius: 3px;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .card:hover { transition: none; transform: none; }
+}
+
+.pubs { padding-left: 22px; }
+.pubs li { margin-bottom: 18px; }
+
+/* ---------- footer ---------- */
+
+footer {
+  max-width: 960px;
+  margin: 64px auto 0;
+  padding: 18px 24px 40px;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---------- phones ---------- */
+
+@media (max-width: 760px) {
+  body { font-size: 17px; }
+  .wrap {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px 16px 0;
+  }
+  .side .name { margin-bottom: 10px; }
+  .side .photo { width: 110px; }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 18px;
+    margin-bottom: 22px;
+  }
+  .menu {
+    padding-bottom: 4px;
+    gap: 4px 22px;
+  }
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  footer { padding: 18px 16px 32px; }
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunesh Sundarasami</title>
+  <meta name="description" content="Sunesh Praveen Raja Sundarasami: M.Sc. Autonomous Systems at Hochschule Bonn-Rhein-Sieg, working student at the August-Wilhelm Scheer Institute. 3D perception, vision-language models and robotics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<div class="wrap">
+
+  <aside class="side">
+    <p class="name"><a href="index.html">Sunesh Sundarasami</a></p>
+    <!-- To add a photo: put it at images/profile.jpg and uncomment the next line. -->
+    <!-- <img class="photo" src="images/profile.jpg" alt="Sunesh Sundarasami"> -->
+    <p class="tagline">M.Sc. student,<br>Autonomous Systems<br>H-BRS, Bonn</p>
+    <ul class="links">
+      <li><a href="mailto:sunesh@outlook.de"><i class="fa-regular fa-envelope"></i>Email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=G7VlDLkAAAAJ"><i class="fa-brands fa-google-scholar"></i>Google Scholar</a></li>
+      <li><a href="https://github.com/SuneshSundarasami"><i class="fa-brands fa-github"></i>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/SuneshSundarasami/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+      <li><a href="https://www.kaggle.com/suneshsundarasami"><i class="fa-brands fa-kaggle"></i>Kaggle</a></li>
+      <!-- CV: add a PDF without your phone number as cv.pdf, then uncomment. -->
+      <!-- <li><a href="cv.pdf"><i class="fa-regular fa-file-lines"></i>CV</a></li> -->
+    </ul>
+  </aside>
+
+  <main>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Main</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </nav>
+
+    <h1>About Me</h1>
+
+    <p>I am Sunesh Praveen Raja Sundarasami, an M.Sc. student in Autonomous Systems at
+      <a href="https://www.h-brs.de/en">Hochschule Bonn-Rhein-Sieg</a> (H-BRS) in Sankt Augustin, Germany.</p>
+
+    <p>Since April 2026 I have been a working student at the
+      <a href="https://www.aws-institut.de/">August-Wilhelm Scheer Institute</a> (AWSi), where I work with
+      vision-language models, knowledge graphs and time-series models on industrial and energy problems.
+      Before that I was a student research intern at
+      <a href="https://www.ivi.fraunhofer.de/en.html">Fraunhofer IVI</a>, where I developed
+      <a href="https://arxiv.org/abs/2609.05114">VoxelFix</a> for correcting 3D semantic maps of aerial scenes.</p>
+
+    <p>Before my master's I spent four years in industry, as a data scientist at ADF Data Science in Chennai
+      and as a senior analyst at Kantar in Bangalore.</p>
+
+    <h2>Research Interests</h2>
+    <!-- Chosen by Sunesh 2026-10-07; keep as is unless he asks. Each is backed by work on the site: VoxelFix; the UAV and AWSi video pipelines;
+         the robot project; the Pepper agent and the AWSi knowledge-graph pipeline. -->
+    <ul>
+      <li>3D scene understanding and semantic mapping</li>
+      <li>Vision-language models for video understanding</li>
+      <li>Vision-language-action models for robot manipulation</li>
+      <li>LLM agents and knowledge graphs</li>
+    </ul>
+
+    <h2>News</h2>
+    <!-- Newest first. Format: <li><span class="when">Mon YYYY</span>: text</li> -->
+    <ul>
+      <li><span class="when">Sep 2026</span>: Preprint
+        <a href="https://arxiv.org/abs/2609.05114">VoxelFix: Post-Hoc Semantic Correction of Completed 3D Voxel Maps</a>
+        is on arXiv.</li>
+      <li><span class="when">Apr 2026</span>: Started as a working student at the August-Wilhelm Scheer Institute.</li>
+      <li><span class="when">Oct 2025</span>: Started as a student research intern at Fraunhofer IVI, Ingolstadt.</li>
+      <li><span class="when">Sep 2024</span>: Started the M.Sc. in Autonomous Systems at H-BRS.</li>
+    </ul>
+
+    <h2 id="experience">Experience</h2>
+    <!-- Work done in a job goes here as bullets. The Projects page is only for work with a paper, code or report.
+         AWSi client work (smart meters): never name the client or give numbers. -->
+    <ul class="cv-list">
+      <li><strong>August-Wilhelm Scheer Institute</strong>, Saarbrücken<br>
+        Working Student <span class="dates">· Apr 2026 – present</span>
+        <ul>
+          <li>Disassembly videos to illustrated step-by-step manuals with vision-language models (Qwen3-Omni,
+            Qwen3-VL), including a battery-part segmentation model (RF-DETR) trained on a dataset I built from
+            EV teardown videos.</li>
+          <li>Disassembly manuals to source-linked RDF knowledge graphs (OWL, SHACL) and executable BPMN processes
+            (Camunda 8), orchestrated with LangGraph.</li>
+          <li>Detecting unregistered batteries, EV wallboxes and heat pumps in smart-meter load curves for a
+            regional grid operator, with physically motivated features, a tabular foundation model (TabPFN) and
+            positive-unlabelled learning.</li>
+          <!-- TODO(Sunesh): confirm the robot project is AWSi work. -->
+          <li>Ongoing: a simulated robot that reads a disassembly manual and carries it out (MuJoCo, π0.5).</li>
+        </ul>
+      </li>
+      <li><strong>Fraunhofer IVI</strong>, Ingolstadt<br>
+        Student Research Intern, Autonomous Systems <span class="dates">· Oct 2025 – Mar 2026</span>
+        <ul>
+          <li>Post-hoc semantic correction of 3D voxel maps of aerial scenes with graph neural networks, published
+            as the <a href="https://arxiv.org/abs/2609.05114">VoxelFix</a> preprint.</li>
+        </ul>
+      </li>
+      <li><strong>ADF Data Science</strong>, Chennai, India<br>
+        Data Scientist <span class="dates">· Aug 2021 – Sep 2024</span>
+        <ul>
+          <li>Risk and prepayment models for lending (XGBoost, TabNet) and a deep survival model for time to
+            default; CI/CD with Jenkins and MLflow that halved deployment time.</li>
+        </ul>
+      </li>
+      <li><strong>Kantar</strong>, Bangalore, India<br>
+        Senior Analyst <span class="dates">· Jul 2020 – Aug 2021</span>
+        <ul>
+          <li>Two-stage DistilBERT pipeline for review categorisation and sentiment; automated reporting on AWS S3
+            and SQL.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul class="cv-list">
+      <li><strong>Hochschule Bonn-Rhein-Sieg</strong>, Sankt Augustin, Germany<br>
+        M.Sc. Autonomous Systems <span class="dates">· Sep 2024 – present</span></li>
+      <li><strong>National Institute of Technology Puducherry</strong>, Karaikal, India<br>
+        B.Tech. Electronics and Communication Engineering <span class="dates">· Aug 2016 – May 2020</span>
+        <ul>
+          <li>Thesis: automated skin lesion segmentation and detection with CNNs and U-Net.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Awards</h2>
+    <!-- Kaggle ranks as shown on kaggle.com/suneshsundarasami/competitions on 2026-10-07. -->
+    <ul>
+      <li>Bronze medal, rank 187 of 3,462:
+        <a href="https://www.kaggle.com/competitions/march-machine-learning-mania-2026">Kaggle March Machine Learning Mania 2026</a></li>
+      <li>Bronze medal, rank 191 of 3,357:
+        <a href="https://www.kaggle.com/competitions/santa-2025">Kaggle Santa 2025, Christmas Tree Packing Challenge</a></li>
+      <li>Top 50 of 2,000+ participants:
+        <a href="https://www.hackerearth.com/challenges/competitive/amexpert-code-lab/leaderboard/credit-card-default-risk-5-95cbc85f/">AmExpert 2021 CODELAB Machine Learning Hackathon</a></li>
+    </ul>
+  </main>
+
+</div>
+
+<footer>
+  © 2026 Sunesh Praveen Raja Sundarasami · Last updated October 2026<br>
+  <a href="https://github.com/SuneshSundarasami/SuneshSundarasami.github.io">Source code</a> ·
+  Design based on the <a href="https://github.com/mmistakes/minimal-mistakes">Minimal Mistakes</a> Jekyll theme
+</footer>
+</body>
+</html>
