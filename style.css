@@ -7,9 +7,9 @@
   --rule: #e4e4e4;
   --underline: #c4c4c4;
   --bg: #fff;
-  /* Klee One is the Latin base of the font on the original site.
-     For a more conventional look, swap in e.g. "Source Serif 4". */
-  --font: "Klee One", Georgia, serif;
+  /* Klee One has no glyphs for some accented letters (e.g. č). LXGW WenKai is built on
+     Klee One and fills those gaps in the same style, so names don't fall back to Georgia. */
+  --font: "Klee One", "LXGW WenKai", Georgia, serif;
 }
 
 * { box-sizing: border-box; }
